@@ -7933,7 +7933,14 @@ header {
   width: 100%;
   border-bottom: 1px solid #1a1a1a;
   float: left; }
+  @media (min-width: 768px) {
+    .exp-wrap .desc {
+      width: calc(100% - 100px); }
+    .exp-wrap .year {
+      width: 100px; } }
   .exp-wrap .desc, .exp-wrap .year {
+    float: left; }
+  .exp-wrap .desc {
     float: left; }
   .exp-wrap .desc {
     width: calc(100% - 150px); }
@@ -7943,6 +7950,8 @@ header {
     .exp-wrap .desc .location {
       margin-bottom: 0; }
   .exp-wrap .year {
+    text-align: right;
+    padding-right: 0.5em;
     width: 150px; }
 
 .progress-wrap {
